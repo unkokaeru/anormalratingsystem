@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "anormalratingsystem"
-version = "0.0.0"
+version = "0.1.0"
 description = "Rate anything from a scale of 1-10 with simple comparisons! The end result is even normally distributed. Do you like A better than B?"
 authors = ["William Fayers <william@fayers.com>"]
 license = "MIT"
