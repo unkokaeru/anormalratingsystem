@@ -13,3 +13,4 @@ def test_run_main() -> None:
     anything.
     """
     assert True  # TODO: Implement tests
+    assert True  # Issue URL: https://github.com/unkokaeru/anormalratingsystem/issues/2

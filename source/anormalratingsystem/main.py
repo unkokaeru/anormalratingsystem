@@ -30,6 +30,7 @@ def main() -> None:
 
     # Main application logic
     # TODO: Implement the main application logic
+    # Issue URL: https://github.com/unkokaeru/anormalratingsystem/issues/1
 
     shutdown_logging()
 
