@@ -30,6 +30,9 @@ Features
 -  ☒ Command-line interface
 -  ☒ Interactive documentation
 -  ☐ Some new planned feature
+-  ☐ Rate anything through comparisons
+-  ☐ Multiple rating systems, 1-10, A-F, etc.
+-  ☐ Auto-export to Anilist/MyAnimeList support formats.
 
 Installation
 ------------

@@ -20,7 +20,9 @@ Rate anything from a scale of 1-10 with simple comparisons! The end result is ev
 - [x] Installable via pip
 - [x] Command-line interface
 - [x] Interactive documentation
-- [ ] Some new planned feature
+- [ ] Rate anything through comparisons
+- [ ] Multiple rating systems, 1-10, A-F, etc.
+- [ ] Auto-export to Anilist/MyAnimeList support formats.
 
 ## Installation
 
