@@ -132,7 +132,6 @@ class ItemRanker:
         4. Distributing the ranked items into buckets based on a predefined weight distribution
         that favors the middle buckets, simulating a normal distribution.
         """
-
         if len(self.items) < 2:
             logger.error("Not enough items to rank.")
             return self.items
