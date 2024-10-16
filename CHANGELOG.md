@@ -9,6 +9,8 @@
 
 ### Fixes
 
+* Add debugging. [unkokaeru]
+
 * Read/write encoding. [unkokaeru]
 
 * Read/write correct format. [unkokaeru]
@@ -20,6 +22,10 @@
 * Todo to issue action failing if no commits. [unkokaeru]
 
 ### Chore
+
+* Bump version from 0.1.3 to 0.1.4. [unkokaeru]
+
+* Update changelog. [unkokaeru]
 
 * Bump version from 0.1.2 to 0.1.3. [unkokaeru]
 
