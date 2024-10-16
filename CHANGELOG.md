@@ -9,11 +9,17 @@
 
 ### Fixes
 
+* Removed unrequired cli positional. [unkokaeru]
+
 * Grammar in print statement. [unkokaeru]
 
 * Todo to issue action failing if no commits. [unkokaeru]
 
 ### Chore
+
+* Bump version from 0.1.0 to 0.1.1. [unkokaeru]
+
+* Update changelog. [unkokaeru]
 
 * Update requirement files. [unkokaeru]
 
