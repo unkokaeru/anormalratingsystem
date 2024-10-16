@@ -9,6 +9,8 @@
 
 ### Fixes
 
+* Read/write correct format. [unkokaeru]
+
 * Removed unrequired cli positional. [unkokaeru]
 
 * Grammar in print statement. [unkokaeru]
@@ -16,6 +18,10 @@
 * Todo to issue action failing if no commits. [unkokaeru]
 
 ### Chore
+
+* Bump version from 0.1.1 to 0.1.2. [unkokaeru]
+
+* Update changelog. [unkokaeru]
 
 * Bump version from 0.1.0 to 0.1.1. [unkokaeru]
 
