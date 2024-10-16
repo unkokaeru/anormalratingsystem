@@ -34,7 +34,7 @@ def read_csv(file_path: Path) -> list[dict[str, str]]:
         logger.error(f"Input file {file_path} is not a CSV file.")
         raise ValueError("Input file must be a CSV file.")
 
-    with open(file_path) as file:
+    with open(file_path, encoding="utf-8") as file:
         csv_reader = csv.DictReader(file)
         entries = []
         for row in csv_reader:
@@ -68,7 +68,7 @@ def write_csv(file_path: Path, data: list[dict[str, str]]) -> None:
         logger.error(f"Output file {file_path} is not a CSV file.")
         raise ValueError("Output file must be a CSV file.")
 
-    with open(file_path, "w", newline="") as file:
+    with open(file_path, "w", newline="", encoding="utf-8") as file:
         csv_writer = csv.DictWriter(file, fieldnames=["entries", "name"])
         csv_writer.writeheader()
 
