@@ -59,7 +59,6 @@ def command_line_interface() -> dict[str, Any]:
         "output_path",
         action="store",
         type=str,
-        required=False,
         default=Constants.DEFAULT_OUTPUT_PATH,
         help="Path to the output file, should end in .csv.",
     )  # Path to the output file
