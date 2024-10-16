@@ -38,9 +38,11 @@ def read_csv(file_path: Path) -> list[dict[str, str]]:
         csv_reader = csv.DictReader(file)
         entries = []
         for row in csv_reader:
+            logger.debug(f"Reading row: {row}")
             if row["name"] == "Completed":
                 # Parse the JSON-like string into a list of dictionaries
                 media_entries = json.loads(row["entries"].replace('""', '"'))
+                logger.debug(f"Media entries: {media_entries}")
                 entries.extend(media_entries)
         logger.debug(f"CSV file read successfully from {file_path} with entries: {entries}")
         return entries
