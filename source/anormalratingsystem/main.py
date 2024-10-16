@@ -35,7 +35,7 @@ def main() -> None:
     ranker = ItemRanker(items_to_compare)
 
     estimated_comparisons = ranker.estimate_comparisons_required()
-    print(f"Estimated comparisons required: {estimated_comparisons}")
+    print(f"Estimated comparisons required: {estimated_comparisons}.")
 
     ranked_items = ranker.rank_items()
     write_csv(user_arguments["output_path"], ranked_items)
