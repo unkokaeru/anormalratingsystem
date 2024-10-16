@@ -35,3 +35,11 @@ class Constants:
 
     # Default values
     DEFAULT_LOG_SAVE_PATH: Path = Path("anormalratingsystem_log.txt")
+    DEFAULT_OUTPUT_PATH: Path = Path("output.csv")
+    DEFAULT_PROGRESS_SAVE_FILE: str = "ranking_progress.json"
+
+    # Text constants
+    QUIT_TEXT: str = "q"
+
+    # Ranking constants
+    RATING_WEIGHTS = [1, 1, 2, 3, 4, 5, 4, 3, 2, 1]  # Slightly skewed normal distribution

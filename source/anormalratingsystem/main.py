@@ -2,9 +2,11 @@
 
 from logging import shutdown as shutdown_logging
 
+from .computation.ranking import ItemRanker
 from .config.constants import Constants
 from .interface.command_line import command_line_interface
 from .logs.setup_logging import setup_logging
+from .utilities.file_handling import read_csv, write_csv
 
 
 def main() -> None:
@@ -29,8 +31,14 @@ def main() -> None:
     )
 
     # Main application logic
-    # TODO: Implement the main application logic
-    # Issue URL: https://github.com/unkokaeru/anormalratingsystem/issues/1
+    items_to_compare = read_csv(user_arguments["input_path"])
+    ranker = ItemRanker(items_to_compare)
+
+    estimated_comparisons = ranker.estimate_comparisons_required()
+    print(f"Estimated comparisons required: {estimated_comparisons}")
+
+    ranked_items = ranker.rank_items()
+    write_csv(user_arguments["output_path"], ranked_items)
 
     shutdown_logging()
 

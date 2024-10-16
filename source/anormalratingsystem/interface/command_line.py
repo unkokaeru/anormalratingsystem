@@ -2,6 +2,7 @@
 
 import logging
 from argparse import ArgumentDefaultsHelpFormatter, ArgumentParser
+from pathlib import Path
 from typing import Any
 
 from ..config.constants import Constants
@@ -47,12 +48,30 @@ def command_line_interface() -> dict[str, Any]:
         version=f"%(prog)s {__version__}",
     )  # Display the version number
 
+    argparser.add_argument(
+        "input_path",
+        action="store",
+        type=str,
+        help="Path to the input file, should end in .csv.",
+    )  # Path to the input file
+
+    argparser.add_argument(
+        "output_path",
+        action="store",
+        type=str,
+        required=False,
+        default=Constants.DEFAULT_OUTPUT_PATH,
+        help="Path to the output file, should end in .csv.",
+    )  # Path to the output file
+
     parsed_args = argparser.parse_args()
 
     # Create a dictionary to return the parsed arguments
     arguments: dict[str, Any] = {
         "log_output_location": parsed_args.log_output_location,
         "verbose": parsed_args.verbose,
+        "input_path": Path(parsed_args.input_path),
+        "output_path": Path(parsed_args.output_path),
     }
 
     logger.debug(f"Arguments: {arguments}")
