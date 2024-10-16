@@ -38,6 +38,18 @@
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="anormalratingsystem.computation.html">anormalratingsystem.computation package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="anormalratingsystem.computation.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="anormalratingsystem.computation.html#module-anormalratingsystem.computation.ranking">anormalratingsystem.computation.ranking module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="anormalratingsystem.computation.html#anormalratingsystem.computation.ranking.ItemRanker"><code class="docutils literal notranslate"><span class="pre">ItemRanker</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="anormalratingsystem.computation.html#anormalratingsystem.computation.ranking.ItemRanker.items"><code class="docutils literal notranslate"><span class="pre">ItemRanker.items</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="anormalratingsystem.computation.html#anormalratingsystem.computation.ranking.ItemRanker.ratings"><code class="docutils literal notranslate"><span class="pre">ItemRanker.ratings</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="anormalratingsystem.computation.html#anormalratingsystem.computation.ranking.ItemRanker.progress_file"><code class="docutils literal notranslate"><span class="pre">ItemRanker.progress_file</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="anormalratingsystem.computation.html#anormalratingsystem.computation.ranking.ItemRanker.estimate_comparisons_required"><code class="docutils literal notranslate"><span class="pre">ItemRanker.estimate_comparisons_required()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="anormalratingsystem.computation.html#anormalratingsystem.computation.ranking.ItemRanker.rank_items"><code class="docutils literal notranslate"><span class="pre">ItemRanker.rank_items()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="anormalratingsystem.computation.html#module-anormalratingsystem.computation">Module contents</a></li>
 </ul>
 </li>
@@ -46,6 +58,8 @@
 <li class="toctree-l2"><a class="reference internal" href="anormalratingsystem.config.html#module-anormalratingsystem.config.constants">anormalratingsystem.config.constants module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="anormalratingsystem.config.html#anormalratingsystem.config.constants.Constants"><code class="docutils literal notranslate"><span class="pre">Constants</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="anormalratingsystem.config.html#anormalratingsystem.config.constants.Constants.DEFAULT_LOG_SAVE_PATH"><code class="docutils literal notranslate"><span class="pre">Constants.DEFAULT_LOG_SAVE_PATH</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="anormalratingsystem.config.html#anormalratingsystem.config.constants.Constants.DEFAULT_OUTPUT_PATH"><code class="docutils literal notranslate"><span class="pre">Constants.DEFAULT_OUTPUT_PATH</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="anormalratingsystem.config.html#anormalratingsystem.config.constants.Constants.DEFAULT_PROGRESS_SAVE_FILE"><code class="docutils literal notranslate"><span class="pre">Constants.DEFAULT_PROGRESS_SAVE_FILE</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="anormalratingsystem.config.html#anormalratingsystem.config.constants.Constants.FORBIDDEN_CODE"><code class="docutils literal notranslate"><span class="pre">Constants.FORBIDDEN_CODE</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="anormalratingsystem.config.html#anormalratingsystem.config.constants.Constants.LOGGING_CONSOLE_FORMAT"><code class="docutils literal notranslate"><span class="pre">Constants.LOGGING_CONSOLE_FORMAT</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="anormalratingsystem.config.html#anormalratingsystem.config.constants.Constants.LOGGING_DATE_FORMAT"><code class="docutils literal notranslate"><span class="pre">Constants.LOGGING_DATE_FORMAT</span></code></a></li>
@@ -55,6 +69,8 @@
 <li class="toctree-l4"><a class="reference internal" href="anormalratingsystem.config.html#anormalratingsystem.config.constants.Constants.LOGGING_TIMESTAMP_FORMAT"><code class="docutils literal notranslate"><span class="pre">Constants.LOGGING_TIMESTAMP_FORMAT</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="anormalratingsystem.config.html#anormalratingsystem.config.constants.Constants.LOGGING_TRACEBACKS"><code class="docutils literal notranslate"><span class="pre">Constants.LOGGING_TRACEBACKS</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="anormalratingsystem.config.html#anormalratingsystem.config.constants.Constants.POSSIBLE_LOGGING_LEVELS"><code class="docutils literal notranslate"><span class="pre">Constants.POSSIBLE_LOGGING_LEVELS</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="anormalratingsystem.config.html#anormalratingsystem.config.constants.Constants.QUIT_TEXT"><code class="docutils literal notranslate"><span class="pre">Constants.QUIT_TEXT</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="anormalratingsystem.config.html#anormalratingsystem.config.constants.Constants.RATING_WEIGHTS"><code class="docutils literal notranslate"><span class="pre">Constants.RATING_WEIGHTS</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="anormalratingsystem.config.html#anormalratingsystem.config.constants.Constants.SUCCESS_CODE"><code class="docutils literal notranslate"><span class="pre">Constants.SUCCESS_CODE</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="anormalratingsystem.config.html#anormalratingsystem.config.constants.Constants.SUCCESS_TEXT"><code class="docutils literal notranslate"><span class="pre">Constants.SUCCESS_TEXT</span></code></a></li>
 </ul>
@@ -87,6 +103,12 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="anormalratingsystem.utilities.html">anormalratingsystem.utilities package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="anormalratingsystem.utilities.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="anormalratingsystem.utilities.html#module-anormalratingsystem.utilities.file_handling">anormalratingsystem.utilities.file_handling module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="anormalratingsystem.utilities.html#anormalratingsystem.utilities.file_handling.read_csv"><code class="docutils literal notranslate"><span class="pre">read_csv()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="anormalratingsystem.utilities.html#anormalratingsystem.utilities.file_handling.write_csv"><code class="docutils literal notranslate"><span class="pre">write_csv()</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="anormalratingsystem.utilities.html#module-anormalratingsystem.utilities">Module contents</a></li>
 </ul>
 </li>
